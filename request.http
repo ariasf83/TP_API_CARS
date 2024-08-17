@@ -1,0 +1,32 @@
+###
+POST http://localhost:9000/api/cars HTTP/1.1
+Content-Type: application/json
+
+{
+    "brand" : "Peugeot",
+    "model" : "Partner",
+    "year" : "2014",
+    "engine" : "1600",
+    "color" : "Yelow"
+}
+
+###
+GET http://localhost:9000/api/cars HTTP/1.1
+
+###
+GET http://localhost:9000/api/cars/66bf9ef3eb03ffd068864667 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/cars/66bf9a5deb03ffd068864661 HTTP/1.1
+Content-Type: application/json
+
+{
+    "brand" : "Chevrolet",
+    "model" : "Corsa",
+    "year" : "2022",
+    "engine" : "1400",
+    "color" : "brown"
+}
+
+###
+DELETE http://localhost:9000/api/cars/66bf9a5deb03ffd068864661 HTTP/1.1
